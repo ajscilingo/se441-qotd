@@ -67,7 +67,7 @@ task wrapper(type: Wrapper) {
     gradleVersion = gradleWrapperVersion
 }
 
-task uploadArchives {
+uploadArchives {
     repositories {
         mavenDeployer {
             repository(
