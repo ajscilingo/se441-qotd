@@ -124,7 +124,7 @@ grails:
                 staticparts: none
     features:
         ShowAttributions:
-            enabled: false
+            enabled: true
 endpoints:
     jmx:
         unique-names: true
