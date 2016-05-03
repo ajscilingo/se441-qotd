@@ -37,6 +37,7 @@
                       <select name="attribution.id" id="attribution" >
                         <option value="null"></option>
                         <option value="1" >qotd.Attribution : 1</option>
+                        <option value="2" >qotd.Attribution : 2</option>
                       </select>
                    </div>
                   </feature:enabled>
