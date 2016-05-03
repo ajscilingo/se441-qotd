@@ -122,9 +122,10 @@ grails:
                 scriptlets: html
                 taglib: none
                 staticparts: none
-    features:
-        ShowAttributions:
-            enabled: true
 endpoints:
     jmx:
         unique-names: true
+
+features:
+        ShowAttributions:
+                enabled: true
