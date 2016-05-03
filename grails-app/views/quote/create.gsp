@@ -27,13 +27,13 @@
             </g:hasErrors>
             <g:form action="save">
                 <fieldset class="form">
-                    <div class='fieldcontain required'>
-       				  <label for='text'>Text<span class='required-indicator'>*</span></label>
+                    <div class="fieldcontain required">
+       				  <label for="text">Text<span class="required-indicator">*</span></label>
                       <input type="text" name="text" value="" required="" id="text" />
                    </div>
                   <feature:enabled feature="ShowAttributions">
-                    <div class='fieldcontain'>
-                      <label for='attribution'>Attribution</label>
+                    <div class="fieldcontain">
+                      <label for="attribution">Attribution</label>
                       <select name="attribution.id" id="attribution" >
                         <option value="null"></option>
                         <option value="1" >qotd.Attribution : 1</option>
