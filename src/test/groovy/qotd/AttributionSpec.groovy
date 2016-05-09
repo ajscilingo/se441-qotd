@@ -15,8 +15,24 @@ class AttributionSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    def "test for valid attribution name"() {
+    
+    	when: 'name is empty'
+    	def p = new Attribution(name: '')
+    	
+    	then: 'validation should fail'
+    	!p.validate()
+    	
+    	when: 'name is null'
+    	p = null
+    	
+    	then: 'validation should fail'
+    	!p.validate()
+    	
+    	when 'legal name'
+    	p = new Attribution(name: 'Anonymous')
+    	
+    	then: 'validation should pass'
+    	p.validate
     }
 }

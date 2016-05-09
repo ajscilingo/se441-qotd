@@ -33,4 +33,5 @@ class QuoteSpec extends Specification {
     	
     	then: 'validation should pass'
     	p.validate()   	
+	}
 }
