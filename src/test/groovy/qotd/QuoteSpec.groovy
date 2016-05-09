@@ -16,22 +16,24 @@ class QuoteSpec extends Specification {
     }
 
     def "test for valid quote test"() {
-    	when 'text is empty'
+    	when: 'text is empty'
     	def p = new Quote(text: '')
     	
     	then: 'validation should fail'
     	!p.validate()
     	
-    	when 'text is null'
+    	when: 'text is null'
     	p = null
-    	
-    	then: 'validation should fail'
     	!p.validate()
     	
-    	when 'legal text'
+    	then: 'validation should fail'
+    	thrown(NullPointerException)
+    	
+    	when: 'legal text'
     	p = new Quote(text: 'testing 1 2 3')
     	
     	then: 'validation should pass'
     	p.validate()   	
 	}
+	
 }

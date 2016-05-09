@@ -25,14 +25,16 @@ class AttributionSpec extends Specification {
     	
     	when: 'name is null'
     	p = null
-    	
-    	then: 'validation should fail'
     	!p.validate()
     	
-    	when 'legal name'
+    	then: 'validation should fail'
+    	thrown(NullPointerException)
+    
+    	
+    	when: 'legal name'
     	p = new Attribution(name: 'Anonymous')
     	
     	then: 'validation should pass'
-    	p.validate
+    	p.validate()
     }
 }
