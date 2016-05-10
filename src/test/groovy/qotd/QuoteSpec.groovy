@@ -23,11 +23,11 @@ class QuoteSpec extends Specification {
     	!p.validate()
     	
     	when: 'text is null'
-    	p = null
-    	!p.validate()
+    	p = new Quote(text: null)
+    	
     	
     	then: 'validation should fail'
-    	thrown(NullPointerException)
+    	!p.validate()
     	
     	when: 'legal text'
     	p = new Quote(text: 'testing 1 2 3')
